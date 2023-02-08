@@ -1,0 +1,81 @@
+.card {
+    background-color: $color-white;
+    display: flex;
+    border-radius: $border-radius-pattern;
+    font-family: $font-primary;
+}
+
+.card__img {
+    width: 25em;
+    height: auto;
+    border-top-left-radius: $border-radius-pattern;
+    border-bottom-left-radius: $border-radius-pattern;
+}
+
+.card__about {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5em;
+}
+
+.card__category {
+    color: $color-text;
+    margin: .5em 0;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+}
+
+.card__title {
+    color: $color-title;
+    margin: .4em 0;
+    font-family: $font-secondery;
+    font-size: 2.5em;
+}
+
+.card__description {
+    color: $color-text;
+    margin: 1.3em 0;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    margin: 1.5em 0;
+    
+    .card__discont-price {
+        color: $color-primary;
+        font-family: $font-secondery;
+        font-size: 2.5em;
+    }
+
+    .card__full-price {
+        color: $color-text;
+        text-decoration: line-through;
+        margin-left: 2em;
+    }
+}
+
+.card__add-to-cart {
+    color: $color-white;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 20em;
+    height: 4em;
+    border: none;
+    border-radius: $border-radius-pattern;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color-primary, 20);
+    }
+}
