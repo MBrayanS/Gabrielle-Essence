@@ -1,0 +1,28 @@
+@media screen and (max-width: $break-point-one) {
+    .card {
+        flex-direction: column;
+        margin: 2em 0;
+    }
+
+    .card__img {
+        height: 20em;
+        object-fit: cover;
+        border-radius: 0;
+        border-top-left-radius: $border-radius-pattern;
+        border-top-right-radius: $border-radius-pattern;
+    }
+}
+
+@media screen and (max-width: $break-point-two) {
+    * {
+        font-size: 4vw;
+    }
+
+    .card { 
+        margin: 0;
+    }
+    
+    .card .card__img {
+        border-radius: 0;
+    }
+}
